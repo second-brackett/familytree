@@ -39,20 +39,20 @@ body{margin:0;min-height:100%;background:var(--bg)}
 .tree-wrap.pfs .tree-viewport,.tree-wrap:fullscreen .tree-viewport{height:100%!important;min-height:0}
 .tree-wrap:fullscreen{background:var(--bg);padding:10px}
 .htree{display:table;margin:0 auto;text-align:center}
-.htree ul{padding-top:18px;position:relative;display:flex;justify-content:center;list-style:none;margin:0;padding-left:0}
-.htree li{float:left;text-align:center;list-style:none;position:relative;padding:18px 8px 0}
-.htree li::before,.htree li::after{content:'';position:absolute;top:0;right:50%;border-top:2px solid var(--line);width:50%;height:18px}
+.htree ul{padding-top:12px;position:relative;display:flex;justify-content:center;list-style:none;margin:0;padding-left:0}
+.htree li{float:left;text-align:center;list-style:none;position:relative;padding:12px 4px 0}
+.htree li::before,.htree li::after{content:'';position:absolute;top:0;right:50%;border-top:2px solid var(--line);width:50%;height:12px}
 .htree li::after{right:auto;left:50%;border-left:2px solid var(--line)}
 .htree li:only-child::after,.htree li:only-child::before{display:none}
 .htree li:only-child{padding-top:0}
 .htree li:first-child::before,.htree li:last-child::after{border:0 none}
 .htree li:last-child::before{border-right:2px solid var(--line);border-radius:0 6px 0 0}
 .htree li:first-child::after{border-radius:6px 0 0 0}
-.htree ul ul::before{content:'';position:absolute;top:0;left:50%;border-left:2px solid var(--line);width:0;height:18px}
+.htree ul ul::before{content:'';position:absolute;top:0;left:50%;border-left:2px solid var(--line);width:0;height:12px}
 .htree li.collapsed>ul{display:none}
 /* Light, regal cards (same in light & dark page themes) */
 .p-card{--ac:#0284c7;--c1:#ffffff;--c2:#f4f7fc;--text:#1e293b;--muted:#4b5a72;--line:#b08a3e;--tag-bg:#fde9a8;--tag-t:#6b4a05;--spouse:#166534;--vil-bg:#fff3c9;--vil-t:#7a4b05;--dau-bg:#fde4f1;--dau-t:#9d174d;--dot:#dc2626;--q:#b45309;
- display:inline-block;min-width:120px;max-width:190px;background:linear-gradient(180deg,var(--c1),var(--c2));color:var(--text);border:1px solid #e3d9bd;border-top:5px solid var(--ac);border-radius:10px;padding:9px 14px 12px;box-shadow:0 1px 2px rgba(60,40,0,.12),0 6px 16px var(--shadow),inset 0 0 0 1px rgba(255,255,255,.9);position:relative;text-align:center;transition:box-shadow .2s,border-color .2s,opacity .25s,transform .2s;animation:pop .55s cubic-bezier(.2,.8,.3,1) both}
+ display:inline-block;min-width:96px;max-width:150px;background:linear-gradient(180deg,var(--c1),var(--c2));color:var(--text);border:1px solid #e3d9bd;border-top:5px solid var(--ac);border-radius:10px;padding:6px 10px 9px;box-shadow:0 1px 2px rgba(60,40,0,.12),0 6px 16px var(--shadow),inset 0 0 0 1px rgba(255,255,255,.9);position:relative;text-align:center;transition:box-shadow .2s,border-color .2s,opacity .25s,transform .2s;animation:pop .55s cubic-bezier(.2,.8,.3,1) both}
 .p-card:hover{border-color:var(--ac);transform:translateY(-2px);box-shadow:0 0 0 3px color-mix(in srgb,var(--ac) 30%,transparent),0 10px 24px var(--shadow)}
 .p-card.root-card{--ac:#64748b;--c1:#fbfcfe;--c2:#e8edf5}
 .p-card.sitaram{--ac:#c9892a;--c1:#fffdf4;--c2:#fde9b0;border-color:#d9b25a;box-shadow:0 0 0 2px rgba(201,137,42,.25),0 8px 20px var(--shadow)}
@@ -65,7 +65,7 @@ body{margin:0;min-height:100%;background:var(--bg)}
 .p-card.dim{opacity:.3}
 .p-card.g1{--ac:#64748b;--c1:#fbfcfe;--c2:#e2e8f0}.p-card.g2{--ac:#ea580c;--c1:#fff7ed;--c2:#fed7aa}.p-card.g3{--ac:#ca8a04;--c1:#fefce8;--c2:#fde68a}.p-card.g4{--ac:#65a30d;--c1:#f7fee7;--c2:#d9f99d}.p-card.g5{--ac:#16a34a;--c1:#f0fdf4;--c2:#bbf7d0}.p-card.g6{--ac:#0d9488;--c1:#ecfdf5;--c2:#a7f3d0}.p-card.g7{--ac:#0891b2;--c1:#ecfeff;--c2:#a5f3fc}.p-card.g8{--ac:#2563eb;--c1:#eff6ff;--c2:#bfdbfe}.p-card.g9{--ac:#4f46e5;--c1:#eef2ff;--c2:#c7d2fe}.p-card.g10{--ac:#7c3aed;--c1:#f5f3ff;--c2:#ddd6fe}.p-card.g11{--ac:#c026d3;--c1:#fdf4ff;--c2:#f5d0fe}.p-card.g12{--ac:#e11d48;--c1:#fff1f2;--c2:#fecdd3}.p-card.g13{--ac:#92400e;--c1:#fafaf9;--c2:#e7d5b8}
 .p-gen-tag{font-family:Outfit,Roboto,Arial,sans-serif;font-size:9px;font-weight:700;color:var(--tag-t);background:var(--tag-bg);padding:1px 8px;border-radius:10px;display:inline-block;margin-bottom:3px;letter-spacing:.8px}
-.p-name-en{font-family:Outfit,Roboto,Arial,sans-serif;font-size:13px;font-weight:700;white-space:nowrap}
+.p-name-en{font-family:Outfit,Roboto,Arial,sans-serif;font-size:12px;font-weight:700;white-space:nowrap}
 .p-name-bn{font-size:12px;color:var(--muted);font-weight:600;margin-top:1px}
 .p-note{font-size:10px;color:var(--muted);margin-top:2px}.sitaram .p-note{color:#8a4b08;font-weight:600}
 .p-spouse{margin-top:4px;padding-top:3px;border-top:1px dashed var(--line);font-size:11px;color:var(--spouse);font-weight:600;white-space:nowrap}
@@ -78,9 +78,9 @@ body{margin:0;min-height:100%;background:var(--bg)}
 @keyframes pop{from{opacity:0;transform:translateY(8px) scale(.96)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.p-card{animation:none}}
 /* bird view */
-.htree.bird ul{padding-top:10px}.htree.bird li{padding:10px 3px 0}.htree.bird li:only-child{padding-top:0}
-.htree.bird li::before,.htree.bird li::after{height:10px}.htree.bird ul ul::before{height:10px}
-.htree.bird .p-card{min-width:0;max-width:none;padding:3px 9px 5px;border-top-width:4px;border-radius:6px;animation:none}
+.htree.bird ul{padding-top:8px}.htree.bird li{padding:8px 2px 0}.htree.bird li:only-child{padding-top:0}
+.htree.bird li::before,.htree.bird li::after{height:8px}.htree.bird ul ul::before{height:8px}
+.htree.bird .p-card{min-width:0;max-width:none;padding:2px 7px 4px;border-top-width:4px;border-radius:6px;animation:none}
 .htree.bird .tgl{display:none}.htree.bird .p-gen-tag{font-size:8px;padding:0 6px;margin-bottom:1px}
 .htree.bird .p-name-bn,.htree.bird .p-note,.htree.bird .p-village-tag,.htree.bird .p-daughter-tag{font-size:9px;margin-top:1px}
 .htree.bird .p-spouse{font-size:10px;margin-top:2px;padding-top:2px}
@@ -117,10 +117,10 @@ html.gt-printing #root{background:#fff;padding:0}
       <button type="button" id="gt-zoom-in"><i>+</i><span>Zoom in</span></button>
       <button type="button" id="gt-zoom-out"><i>&minus;</i><span>Zoom out</span></button>
       <button type="button" id="gt-zoom-fit"><i>↺</i><span>Reset</span></button>
-      <button type="button" id="gt-snap" title="Drag a box over the area to print"><i>🖨</i><span>Print area</span></button>
-      <button type="button" id="gt-printall" title="Print the whole tree"><i>📜</i><span>Print all</span></button>
+      
+      
       <button type="button" id="gt-bird"><i>👁</i><span>Bird view</span></button>
-      <button type="button" id="gt-full"><i>⛶</i><span>Full screen</span></button>
+      
     </div>
     <div class="zoom-level" id="gt-zoom-level">100%</div>
     <div class="tree-viewport" id="gt-viewport"><div class="zoom-stage" id="gt-stage"><div class="htree" id="gt-tree"></div></div></div>
@@ -315,7 +315,7 @@ html.gt-printing #root{background:#fff;padding:0}
   document.getElementById('gt-theme').onclick = function () { html.setAttribute('data-theme', isDark() ? 'light' : 'dark'); };
 
   /* ---------- FULL SCREEN: native first, in-page overlay as a guaranteed fallback ---------- */
-  var pfs = false, fullBtn = document.getElementById('gt-full');
+  var pfs = false, fullBtn = document.createElement('button');
   function setPfs(on) {
     pfs = on; wrap.classList.toggle('pfs', on); fullBtn.classList.toggle('on', on);
     document.body.style.overflow = on ? 'hidden' : '';
@@ -377,7 +377,7 @@ html.gt-printing #root{background:#fff;padding:0}
   window.addEventListener('beforeprint', function () { printed = true; });
   window.addEventListener('afterprint', endPrint);
 
-  document.getElementById('gt-printall').onclick = function () {
+  document.createElement('button').onclick = function () {
     tree.querySelectorAll('li.collapsed').forEach(function (li) {
       li.classList.remove('collapsed'); var t = li.querySelector(':scope > .p-card > .tgl'); if (t) t.textContent = '−';
     });
@@ -388,7 +388,7 @@ html.gt-printing #root{background:#fff;padding:0}
     }, 80);
   };
 
-  var snapBtn = document.getElementById('gt-snap'), sel = document.createElement('div'), hint = document.createElement('div');
+  var snapBtn = document.createElement('button'), sel = document.createElement('div'), hint = document.createElement('div');
   var selecting = false, sx = 0, sy = 0, box = null;
   sel.id = 'gt-sel'; hint.id = 'gt-hint';
   hint.textContent = 'Drag on the chart to select the area to print · Esc to cancel';
